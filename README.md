@@ -6,6 +6,16 @@
 - Define common characteristics of objects including state and behavior
 - Define fundamental Java class members: fields, constructors, and methods
 
+## Java Primitive versus Reference Data Types
+
+So far, we've mostly worked with variables that are declared as **primitive data types**, which include:
+byte, short, int, long, float, double, boolean, and char. 
+
+We have also worked with a few **reference** data types.
+A reference data type represents any instantiable class (`String`, `Scanner`, etc), as well as arrays.
+
+In the next few lessons, we will learn how to create new reference data types by defining new Java classes! 
+
 ## Classes in Java
 
 Java is an object-oriented programming language. This means it thinks of the
@@ -15,7 +25,7 @@ music concert, company meeting), the components of a web browser (menu bar, butt
 popup dialog, scrollbar), or even a programming language (Java, Python, Javascript).
 
 All objects have **state** and **behavior**.   
-- State is the relevant properties (data) about an object. 
+- State encapsulates the relevant properties (data) about an object. 
 - Behavior is the set of operations that access and modify the object state.
 
 For example, consider the state and behavior of a dog, a television, or a button displayed on a web page:
@@ -103,10 +113,17 @@ named `eatTreat()` that assigns the `waggingTail` field to true.
 
 Once we have defined the `Dog` class, we can create many instances of the class.
 The visualization above depicts how memory is allocated to store the state of two `Dog`
-instances, with each having a separate copy of the fields.
+instances, with each having a separate copy of the fields. As we've seen in previous lessons,
+when a method declares a variable with a primitive type such
+as `int` or `boolean`, the value is stored on the stack.
+A variable declared with a reference type however represents an
+object, and objects stored their fields in a part of memory called the heap. 
 
-But how do we create a `Dog` class instance in Java?  How do we assign values to the fields?
-That will be covered in the next couple of lessons!
+But how do we create a `Dog` class instance in Java?
+How is memory allocated in the heap to store the fields for each class instance?
+How do we assign values to the fields?
+
+All these question will be answered in the next couple of lessons!
 
 ## Naming conventions
 
