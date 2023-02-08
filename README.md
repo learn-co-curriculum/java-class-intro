@@ -63,6 +63,7 @@ public class ClassName {
 ```
 
 Here are a few things to note:
+
 - The `public` keyword is covered in a later lesson on **access modifiers**.
 - The `class` keyword indicates we are defining a new Java class.
 - The class name should follow standard naming conventions, which are described in a subsequent section.
